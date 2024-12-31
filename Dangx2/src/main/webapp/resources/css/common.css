@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+/* 공통 기본 */
+body {
+	font-family: 'NanumGothic', sans-serif;
+}
+.header-inner, .content-inner, .footer-inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.layout-content {
+    min-height: calc(100vh - 80px - 150px);
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+/* 헤더 */
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* 헤더 로고 */
+header .header-logo a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    background: url(../image/logo_dangx2.png) no-repeat center;
+    background-size: 100%;
+}
+
+/* 헤더 메뉴 */
+header .header-navigation nav > ul {
+    display: flex;
+    position: relative;
+}
+
+header .header-navigation nav > ul > li {
+    position: relative;
+}
+
+header .header-navigation nav > ul > li + li {
+    margin-left: 25px;
+}
+
+header .header-navigation nav > ul > li > a {
+    display: block;
+    padding: 0 20px;
+    height: 46px;
+    line-height: 46px;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+header .header-navigation nav > ul > li:hover > a {
+    background-color: #fff;
+    color: #EC6818;
+}
+
+header .header-navigation nav ul > li > ul {
+    display: none;
+    position: absolute;
+    left: -15px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    width: 140%;
+    border-radius: 0 0 10px 10px;
+}
+
+header .header-navigation nav ul > li > ul > li {
+    padding-top: 5px; 
+}
+
+header .header-navigation nav ul > li > ul > li > a {
+    display: contents;
+    line-height: 46px;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+header .header-navigation nav ul > li > ul::after {
+	content: ""; 
+	display: block; 
+	clear: both;
+}
+
+
+header .header-navigation nav > ul > li:hover > ul {
+	display: block;
+}
+
+header .header-navigation nav > ul > li > ul > li:hover > a {
+	color: #EC6818;
+}
+
+/* 헤더 로그인 정보 */
+header .header-info ul {
+	display: flex;
+    justify-content: flex-end;
+}
+
+header .header-info ul li {
+    position: relative;
+}
+
+header .header-info ul li:first-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #7B7B7B;
+}
+
+header .header-info ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 15px;
+    color: #7B7B7B;
+    font-weight: 400;
+	vertical-align: baseline;
+	text-decoration: none;
+	transition: .3s;
+}
+
+header .header-info ul li:hover a {
+	color: #EC6818;
+	font-weight: 600;
+}
+
+
+/* 푸터 */
+footer {
+    height: 150px;
+    background-color: #F9F9F9;
+}
+
+footer .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-weight: 300;
+	vertical-align: baseline;
+}
+
+footer .footer-inner .footer-logo {
+	flex-grow: 1;
+}
+
+footer .footer-inner .footer-info {
+	flex-grow: 2;
+}
+
+footer .footer-inner .footer-sns {
+	flex-grow: 1;
+}
+
+/* 푸터 로고 */
+footer .footer-logo a {
+    display: block;
+    width: 150px;
+    height: 70px;
+    background: url(../image/logo_dangx2.png) no-repeat center;
+    background-size: 100%;
+}
+
+/* 푸터 정보 영역 */
+footer .footer-info ul li {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+footer .footer-info ul li:nth-child(2) {
+	margin: 7px 0;
+}
+
+/* 푸터 sns 영역 */
+footer .footer-sns ul {
+	display: flex;
+    justify-content: flex-end;	
+}
+
+footer .footer-sns ul li a {
+	display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin: 0 10px;
+}
+
+footer .footer-sns ul li a {
+	display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+footer .footer-sns .sns-youtube {
+    /* background: url(../image/sns_youtube.png) no-repeat center; */
+    background: url(../image/sns_cafe.svg) no-repeat center;
+    background-size: 60%;
+}
+
+footer .footer-sns .sns-instagram {
+    background: url(../image/sns_instagram.png) no-repeat center;
+    background-size: 60%;
+}
+
+footer .footer-sns .sns-blog {
+    background: url(../image/sns_blog.png) no-repeat center;
+    background-size: 60%;
+}

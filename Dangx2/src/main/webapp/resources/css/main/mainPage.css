@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+main .paw-container {
+	position : relative;
+}
+
+main .paw {
+	position : absolute;
+}
+
+main #paw1 {
+	top : 900.65px;
+	left : 260.43px;
+	width : 141px;
+	height : 141px;
+}
+
+main #paw2 {
+	top : 309.32px;
+	left : 1480.23px;
+	width : 231px;
+	height : 231px;
+}
+
+/* 배너영역 */    
+main .content-banner {
+	background-color: rgba(254, 193, 19, 1);
+}
+
+main .content-banner {
+    position: relative;
+    width: 100%;
+    height: 440px;
+	margin: 0 auto;
+}
+
+main .content-banner > div {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+main .content-banner .banner-content h1 {
+	font-size: 38px;
+	font-weight: 700;
+	/* color: rgba(57, 57, 57, 1); */
+}
+
+main .content-banner .banner-content h1:first-child {
+	margin-bottom: 15px;
+}
+
+main .banner-content p {
+	font-size: 18px;
+    font-weight: 400;
+}
+
+main .content-banner .banner-content p:nth-of-type(2) {
+	margin: 5px 0;
+}
+
+main .content-banner .banner-content {
+	margin-left: 120px;
+}
+
+main .content-banner .banner-image {
+	margin-right: 120px;
+}
+
+main .content-banner .banner-image h1 {
+	display: block;
+    width: 340px;
+    height: 340px;
+    background: url(../../image/banner_dangx2.png) no-repeat center;
+    background-size: 100%;
+}
+
+main .content-banner .banner-content .banner-content {
+	flex-grow: 2;
+}
+
+main .content-banner .banner-content .banner-image {
+	flex-grow: 1;
+}
+
+
+/* 섹션 영역 */
+main .content-inner .inner-section {
+	max-height: 450px;
+    margin-top: 40px;
+    padding: 40px 45px;
+    border-radius: 40px;
+    border: 1px solid #333;
+    background-color:#fff;
+}
+
+main .content-inner .inner-section .section-title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+/* 운영방식 영역 */
+main .content-inner .inner-section:first-child {
+    background-color: rgba(255, 251, 239, 1);
+    border: none;
+}
+
+main .content-inner .inner-section:first-child .section-title span {
+    color: #ffa500;
+}
+
+main .content-inner .inner-section:first-child .section-about-content div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main .content-inner .inner-section:first-child .section-about-content div p:first-child {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    background-color: #FDC219;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+main .content-inner .inner-section:first-child .section-about-content div p:last-child {
+    font-size: 20px;
+    color: rgba(83, 83, 83, 1);
+}
+
+main .content-inner .inner-section:first-child .section-about-content div:nth-child(2) {
+    margin: 15px 0;
+}
+
+/* 바로가기 영역 */
+main .content-inner .inner-section:nth-of-type(2) {
+	border: none;
+	/* padding-left: 0;
+    padding-right: 0; */
+    padding: 0;
+}
+
+main .content-inner .section-link-content {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content-inner .section-link-content > div {
+    width: 360px;
+    height: 140px;
+    border-radius: 40px;
+}
+
+main .content-inner .section-link-content .link-content-boost {
+    background-color: rgba(255, 247, 241, 1);
+}
+
+main .content-inner .section-link-content .link-content-adoption {
+	 background-color: rgba(241, 251, 255, 1);
+}
+
+main .content-inner .section-link-content .link-content-service {
+	 background-color: rgba(255, 245, 249, 1);
+}
+
+main .content-inner .section-link-content > div div {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main .content-inner .section-link-content > div > a {
+	text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+main .content-inner .section-link-content > div div > h2 {
+	display: block;
+    width: 75px;
+    height: 75px;
+	margin-right: 10%;
+	background-size: 100%;
+}
+
+main .content-inner .section-link-content .link-content-boost .link-content-boost-image {
+    background: url(../../image/link_boost.png) no-repeat center;
+}
+
+main .content-inner .section-link-content .link-content-adoption .link-content-adoption-image {
+    background: url(../../image/link_adoption.png) no-repeat center;
+}
+
+main .content-inner .section-link-content .link-content-service .link-content-service-image {
+    background: url(../../image/link_service.png) no-repeat center;
+}
+
+/* 게시판 영역 */
+main .content-inner .section-board-title {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content-inner .section-board-title > div {
+	display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+main .content-inner .section-board-title > div > h1 {
+	font-size: 25px;
+    font-weight: 600;
+}
+
+main .content-inner .section-board-title > a {
+	text-decoration: none;
+	color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+main .content-inner .section-board-title > a:hover {
+	color: #EC6818;
+	font-weight: 600;
+}
+    
+main .content-inner .section-board-list {
+	margin-top: 35px;
+	min-height: 185px;
+	border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+main .content-inner .section-board-list > ul > li > a {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 3% 5%;
+    color: #333;
+}
+
+main .content-inner .section-board-list > ul > li > a > div:first-child {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: .3s;
+}
+
+main .content-inner .section-board-list > ul > li > a:hover > div:first-child {
+	color: #EC6818;
+	font-weight: 400;
+}
+
+main .content-inner .section-board-title .board-title-shlter-icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 3%;
+	background: url(../../image/icon_shelter.png) no-repeat center;
+	background-size: 100%;
+}
+
+main .content-inner .section-board-title .board-title-free-icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 3%;
+	background: url(../../image/icon_free.png) no-repeat center;
+	background-size: 100%;
+}
+
+/* 도움을 주신 분들 영역 */
+main .content-inner .section-help-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+main .content-inner .section-help-list > a > div {
+	display: block;
+	background-size: 100%;
+    width: 140px;
+    height: 140px;
+}
+
+main .content-inner .section-help-list > a > .link-help-instagram-image {
+	background: url(../../image/link_instagram.png) no-repeat center;
+}
+
+main .content-inner .section-help-list > a > .link-help-blog-image {
+	background: url(../../image/link_blog.png) no-repeat center;
+}
+
+main .content-inner .section-help-list > a > .link-help-cafe-image {
+	background: url(../../image/link_cafe.png) no-repeat center;
+}
+
+main .content-inner .section-help-list > a > .link-help-tj-image {
+	background: url(../../image/link_tj.png) no-repeat center;
+}
+
+main .content-inner .section-help-list > a > .link-help-noimage-image {
+	background: url(../../image/noimage.jpg) no-repeat center;
+}
+
+

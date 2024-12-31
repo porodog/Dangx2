@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+main .content-inner .inner-section {
+    margin-top: 40px;
+    padding: 40px 45px;
+    border-radius: 40px;
+    border: 1px solid #333;
+}
+
+main .content-inner .section-board-title {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content-inner .section-board-title > div {
+	display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+main .content-inner .section-board-title > div > h1 {
+	font-size: 25px;
+    font-weight: 600;
+}
+
+main .content-inner .section-board-title > a {
+	text-decoration: none;
+	color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+main .content-inner .section-board-title > a:hover {
+	color: #EC6818;
+	font-weight: 600;
+}
+    
+main .content-inner .section-board-list {
+	margin-top: 35px;
+	min-height: 185px;
+	border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+main .content-inner .section-board-list > ul > li > a {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 3% 5%;
+    color: #333;
+}
+
+main .content-inner .section-board-list > ul > li > a > div:first-child {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: .3s;
+}
+
+main .content-inner .section-board-list > ul > li > a:hover > div:first-child {
+	color: #EC6818;
+	font-weight: 400;
+}
+
+main .content-inner .section-board-title .board-title-shlter-icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 3%;
+	background: url(../../image/icon_shelter.png) no-repeat center;
+	background-size: 100%;
+}
+
+main .content-inner .section-board-title .board-title-free-icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 3%;
+	background: url(../../image/icon_free.png) no-repeat center;
+	background-size: 100%;
+}
+
+
+
+main .content-inner {
+	padding-top: 50px;
+}
+
+main .content-inner > h1 {
+	text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+main .content-inner > h1 > span {
+	color: #ffa500;
+}
+
+main .content-inner .section-board-list div {
+    padding: 2% 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+main .content-inner .inner-section .section-board-list .boost-content {
+    line-height: 180%;
+}
+
+main .content-inner .section-board-list .header {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main .content-inner .section-board-list .content {
+    text-indent: 25px;
+}
+
+
+main .section-board-list .boost-about {
+	border-top: 1px solid #ddd;
+}
+
+main .section-board-list .boost-image > h1 {
+	display: block;
+    height: 400px;
+	background: url(../../image/img_contents_boost.png) no-repeat center;
+	background-size: 100%;
+	background-color: #FFEFD8;
+	border-radius: 100px;
+}
+
+main .section-board-list .boost-about {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+main .section-board-list .boost-about .section-about-content > div > div:first-child {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main .section-board-list .boost-about .section-about-content .section-about-content-number {
+	display: flex;
+    width: 36px;
+    height: 36px;
+    background-color: #FDC219;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+main .section-board-list .boost-about .section-about-content > div > div:first-child > p:last-child {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+main .section-board-list .boost-about .section-about-content > div > div:first-child > p:last-child > span {
+	color: #ffa500;
+}
+
+main .section-board-list .boost-about .section-about-content > div > div:last-child {
+	padding-top: 0;
+}
+
+main .section-board-list .boost-about .section-about-content > div > div:last-child > p {
+	text-indent: 45px;
+	color: #333;
+}
+
+main .section-board-list .boost-about .section-about-code h1 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../../image/qrcode_boost.jpg) no-repeat center;
+    background-size: 100%;
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.foundId h1 {
+	color : #ff7865;
+	display : flex;
+	font-size : 24px;
+	margin-bottom: 10px;
+	justify-content : center;
+	align-items : center;
+}
+
+.container {
+	margin-top: 7.5%;
+    height: 59.5vh;
+}
+img {
+	   display : flex;
+	   width: 238px; /* 너비를 설정 */
+       height: 88px; /* 높이를 설정 */
+       background-image: url(../../image/logo_dangx2.png); /* 이미지 경로 */
+       background-size: cover; /* 이미지가 요소 전체를 덮도록 */
+       background-position: center; /* 이미지를 중앙에 위치 */
+       background-repeat: no-repeat; /* 이미지 반복 방지 */
+	   margin: 0 auto 2em auto; /* 이미지 가운데 정렬 및 아래쪽 여백 추가 */
+}
+.foundId {
+	border : 1px solid #ccc;
+	border-radius : 20px;
+	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
+	padding : 40px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.line1 {
+	border : 2px solid #ccc;
+	width : 100%;
+	margin-top : 10px;
+}
+
+.foundId p {
+	line-height : 25px;
+	margin-top: 40px;
+	margin-bottom : 40px;
+}
+
+.foundId > a {
+	text-decoration : none;
+	color : #fff;
+	background-color : #fa7618;
+	padding : 20px;
+	border-radius : 40px;
+}
+
+.foundId a:hover {
+	background-color : #f4a41e;
+	
+}

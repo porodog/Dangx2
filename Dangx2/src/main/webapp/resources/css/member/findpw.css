@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* contents */
+main .main-content {
+	overflow: hidden;
+	height: auto; /* 화면의 전체 높이를 사용 */
+	display: flex;
+	justify-content: center; /* 가로 가운데 정렬 */
+	align-items: center; /* 세로 가운데 정렬 */
+	box-sizing: border-box;
+	
+}
+
+.container {
+	padding: 2em;
+	display: block;
+	width: auto;
+	height: auto;
+	top : 500px;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 폼 스타일 추가 */
+	/* background-color: #fff; 배경색 추가 */
+	border-radius: 8px; /* 모서리 둥글게 */
+	text-align : left;
+}
+
+.findid-img {
+       width: 238px; /* 너비를 설정 */
+       height: 88px; /* 높이를 설정 */
+       background-image: url(../../image/logo_dangx2.png); /* 이미지 경로 */
+       background-size: cover; /* 이미지가 요소 전체를 덮도록 */
+       background-position: center; /* 이미지를 중앙에 위치 */
+       background-repeat: no-repeat; /* 이미지 반복 방지 */
+	   margin: 0 auto 2em auto; /* 이미지 가운데 정렬 및 아래쪽 여백 추가 */
+}
+
+
+form p {
+	margin: 0.5em 0;
+	font-weight: bold;
+    color: #2A2A2A;
+    font-family: "NanumGothic";
+}
+
+form input {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: 1px solid #E3E3E3;
+	border-radius: 20px;
+    width: 400px;
+    height: 40px;
+}
+
+form {
+	width: 400px;
+	height : auto;
+	border : 2px solid #E3E3E3;
+	border-radius: 20px;
+	padding: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container img {
+    position: absolute;
+    left: 10px;
+    top: 37%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.input-container > span {
+    position: absolute;
+    right: 10px;
+    top: 22%;
+}
+
+.input-container input {
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.input-container > .rectangle-4141{
+	width: 289px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.btn-01 {
+	width: 101px;
+	height: 40px;
+	padding: 0.75em;
+	background-color: #fa7618;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	position: absolute;
+	margin-left: 9px; 
+	font-size: 13px;
+	cursor: pointer;
+    margin-bottom: 13px;
+}
+
+ .btn-02 {
+	width: 180px;
+	height: 40px;
+	padding: 0.75em;
+	background-color: #fa7618;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	margin: 20px auto; 
+	font-size: 15px;
+	cursor: pointer;
+    margin-bottom: 13px;
+    display: block;
+} 
+
+
+button:hover {
+	background-color: #ff8d3c;
+}
+
+.findbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.findbtn > a {
+    text-decoration: none;
+}
+
+.findbtn p,
+.findbtn a {
+	margin-top: 8px;
+    margin-right: 20px;
+    color: #878787;
+}
+
+.hide {
+	display: none;
+	color: red;
+}
+
+.effefont {
+	font-size: 13px;
+	vertical-align: middle;
+	text-align: left;
+	color: red;
+	margin-bottom: 10px;
+}
+
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "NanumGothic";
+	text-align: center;
+	margin-bottom: 30px
+}

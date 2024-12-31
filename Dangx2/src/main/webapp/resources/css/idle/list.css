@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+main .content-inner {
+	padding-top: 50px;
+}
+
+main .content-inner > h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+main .content-inner > h1 > span {
+    color: #ffa500;
+}
+
+main .content-inner .inner-section {
+    margin-top: 40px;
+    padding: 40px 45px;
+}
+
+/* 목록 */
+main .content-inner .inner-section .view-item-list {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+
+main .content-inner .inner-section .view-item-list .idle-item {
+	width: 30%;
+	margin: 2% 1.5%;
+}
+
+
+/* 목록 상세 아이템 */
+main .content-inner .inner-section .view-item-list .idle-item .idle-image {
+	position: relative;
+}
+
+main .content-inner .inner-section .view-item-list .idle-item .idle-image > img {
+	width: 100%;
+	height: 300px;
+	border-radius: 20px;
+	transition: .3s;
+}
+
+main .content-inner .inner-section .view-item-list .idle-item .idle-image > p {
+	position: absolute;
+    left: 40%;
+    top: 45%;
+    color: #eee;
+    font-weight: 300;
+    z-index: 10;
+    display: none;
+    transition: .3s;
+}
+
+
+main .content-inner .inner-section .view-item-list .idle-item > a {
+	text-decoration: none;
+	color: #33333399;
+    font-size: 18px;
+    line-height: 20px;
+    transition: .3s;
+}
+
+main .content-inner .inner-section .view-item-list .idle-item .idle-info > p:first-child {
+	font-size: 20px;
+	font-weight: 500;
+    color: #333;
+    margin: 8px 0;
+}
+
+main .content-inner .inner-section .view-item-list .idle-item > a:hover .idle-info p {
+	color: #ffa500;
+}
+
+main .content-inner .inner-section .view-item-list .idle-item > a:hover .idle-image > img {
+	filter: brightness(70%);
+}
+
+
+main .content-inner .inner-section .view-item-list .idle-item > a:hover .idle-image > p {
+	display: block;
+	font-weight : bold;
+}
+main .content-inner .inner-section .view-item-list .idle-item > a:hover .idle-image > p:hover{
+	color : #ffa500;
+}
+
+/* 페이지번호 영역 */
+main .idle-view-contents .view-item-page {
+	padding: 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .idle-view-contents .view-item-page ul {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .idle-view-contents .view-item-page ul > li {
+	margin: 0 5px;
+}
+
+main .idle-view-contents .view-item-page ul a {
+	display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 30px;
+    transition: .3s;
+}
+
+main .idle-view-contents .view-item-page ul a:hover {
+	background-color: #FDC219;
+    border-radius: 10px;
+    color: #fff;
+}
+
+main .idle-view-contents .view-item-page li.active > a {
+    background-color: #FDC219;
+    border-radius: 10px;
+    color: #fff;
+}
